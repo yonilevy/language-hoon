@@ -1,0 +1,14 @@
+{
+  "name": "language-hoon",
+  "version": "0.0.0",
+  "description": "Hoon language support in Atom",
+  "keywords": [
+  ],
+  "repository": "https://github.com/yonilevy/language-hoon",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

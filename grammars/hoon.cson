@@ -1,0 +1,69 @@
+fileTypes: [
+  "hoon"
+  "hook"
+]
+name: "hoon"
+patterns: [
+  {
+    begin: "::"
+    comment: "comment"
+    end: "\\n"
+    name: "comment.line.hoon"
+  }
+  {
+    begin: "\\s*\"\"\""
+    comment: "doqbloq"
+    end: "\\s*\"\"\""
+    name: "string.double.hoon"
+  }
+  {
+    begin: "\\s*'''"
+    comment: "soqbloq"
+    end: "\\s*'''"
+    name: "string.double.hoon"
+  }
+  {
+    begin: "\\\""
+    comment: "tape"
+    end: "\\\""
+    name: "string.double.hoon"
+  }
+  {
+    begin: "\\'"
+    comment: "cord"
+    end: "\\'"
+    name: "string.single.hoon"
+  }
+  {
+    comment: "arm"
+    match: "[a-z]([a-z0-9-]*[a-z0-9])?/"
+    name: "constant.character.hoon"
+  }
+  {
+    comment: "arm"
+    match: "\\+\\+  [a-z]([a-z0-9-]*[a-z0-9])?"
+    name: "entity.name.function.hoon"
+  }
+  {
+    comment: "cube"
+    match: "%[a-z]([a-z0-9-]*[a-z0-9])?"
+    name: "constant.character.hoon"
+  }
+  {
+    comment: "odor"
+    match: "@[a-z]([a-z0-9-]*[a-z0-9])?"
+    name: "storage.type.hoon"
+  }
+  {
+    comment: "rune"
+    match: "[+\\-|$%:.#^~;=?!_,&@\\/<>%*]"
+    name: "keyword.control.hoon"
+  }
+  {
+    begin: ";script(type \"text/coffeescript\")"
+    comment: "rune"
+    end: "=="
+    name: "keyword.control.hoon"
+  }
+]
+scopeName: "source.hoon"
