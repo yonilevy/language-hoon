@@ -1,3 +1,4 @@
 ".source.hoon":
   editor:
     commentStart: "::"
+    nonWordCharacters: "()\"',<>[]{}`…"
