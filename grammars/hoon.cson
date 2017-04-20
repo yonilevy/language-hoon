@@ -11,6 +11,18 @@ patterns: [
     name: "comment.line.hoon"
   }
   {
+    begin: ":>"
+    comment: "doccord"
+    end: "\\n"
+    name: "comment.line.hoon"
+  }
+  {
+    begin: ":<"
+    comment: "doccord"
+    end: "\\n"
+    name: "comment.line.hoon"
+  }
+  {
     begin: "\\s*\"\"\""
     comment: "doqbloq"
     end: "\\s*\"\"\""
