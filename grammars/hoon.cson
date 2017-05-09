@@ -38,12 +38,14 @@ patterns: [
     begin: "\\\""
     comment: "tape"
     end: "\\\""
+    patterns: [{include: '#escaped_char'}]
     name: "string.double.hoon"
   }
   {
     begin: "\\'"
     comment: "cord"
     end: "\\'"
+    patterns: [{include: '#escaped_char'}]
     name: "string.single.hoon"
   }
   {
@@ -79,3 +81,6 @@ patterns: [
   }
 ]
 scopeName: "source.hoon"
+repository:
+  escaped_char:
+    match: '\\\\.'
