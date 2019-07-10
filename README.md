@@ -4,10 +4,7 @@
 
 **Rot Alert**
 
-I abandoned this little project, but the nice people of Tlon took over!
-
-This is where you want to be:
-[https://github.com/mikolajpp/language-hoon](https://github.com/mikolajpp/language-hoon)
+I abandoned this little project, but the nice people of Tlon took over! [Please visit the official repository.](https://github.com/urbit/language-hoon)
 
 ---
 
